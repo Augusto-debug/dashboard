@@ -4,11 +4,11 @@ import Navbar from "../components/dashboard/navbar/Navbar";
 
 const layout = ({ children }) => {
   return (
-    <div className="flex h-full">
-      <div className="w-full">
+    <div className="flex bg-gray-200   ">
+      <div className=" h-screen w-[35%] md:w-1/5 p-5 bg-[#182237]">
         <Sidebar />
       </div>
-      <div className="">
+      <div className="flex flex-col w-full">
         <Navbar />
         {children}
       </div>

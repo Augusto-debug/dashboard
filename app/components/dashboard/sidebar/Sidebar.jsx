@@ -16,7 +16,7 @@ import {
 const Sidebar = () => {
   return (
     <aside>
-      <div className="h-screen w-2/5 md:w-1/5 p-5 bg-[#182237]">
+      <div className="">
         <div className="flex">
           <Avatar
             name="Wim Mostmans"
@@ -24,14 +24,16 @@ const Sidebar = () => {
             round={true}
             className="cursor-pointer"
           />
-          <div className="ml-3 cursor-pointer">
+          <div className="ml-3 cursor-pointer text-white">
             <p>User 1</p>
             <p>Admin</p>
           </div>
         </div>
 
         <div className="flex flex-col mt-5 space-y-2 w-full ">
-          <p className="text-sm justify-start text-gray-400 -ml-2">Pages</p>
+          <p className="text-sm justify-start text-gray-400 -ml-2 py-2">
+            Pages
+          </p>
           <p className="text-white flex items-center cursor-pointer">
             <SquaresPlusIcon
               height={20}
@@ -64,7 +66,7 @@ const Sidebar = () => {
             />
             Transactions
           </p>
-          <p className="text-sm justify-start text-gray-400 -ml-2 ">
+          <p className="text-sm justify-start text-gray-400 -ml-2 mb-2 py-2 ">
             Analytics
           </p>
 
@@ -88,7 +90,9 @@ const Sidebar = () => {
             <UsersIcon height={20} width={20} className="mr-2 text-gray-400" />
             Teams
           </p>
-          <p className="text-sm justify-start text-gray-400 -ml-2">Users</p>
+          <p className="text-sm justify-start text-gray-400 -ml-2 py-2 ">
+            Users
+          </p>
           <p className="text-white flex items-center cursor-pointer">
             <Cog6ToothIcon
               height={20}
